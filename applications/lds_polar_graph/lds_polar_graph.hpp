@@ -69,7 +69,7 @@ private:
   qreal angular_max_;
   qreal radial_min_;
   qreal radial_max;
-  boost::asio::io_service io_;
+  boost::asio::io_context io_;
   std::string port_;
   uint32_t baud_rate_;
   bool shutting_down_;
