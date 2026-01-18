@@ -52,7 +52,7 @@ public:
   * @brief Constructs a new LFCDLaser attached to the given serial port
   * @param port The string for the serial port device to attempt to connect to, e.g. "/dev/ttyUSB0"
   * @param baud_rate The baud rate to open the serial port at.
-  * @param io Boost ASIO IO Service to use when creating the serial port object
+  * @param io Boost ASIO IO Context to use when creating the serial port object
   */
   LFCDLaser(const std::string & port, uint32_t baud_rate, boost::asio::io_context & io);
 
